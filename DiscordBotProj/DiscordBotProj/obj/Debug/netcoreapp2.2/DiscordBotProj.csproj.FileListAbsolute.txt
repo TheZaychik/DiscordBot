@@ -1,0 +1,11 @@
+/Users/nikitazaytsev/git/DiscordBot/DiscordBotProj/DiscordBotProj/obj/Debug/netcoreapp2.2/DiscordBotProj.csprojAssemblyReference.cache
+/Users/nikitazaytsev/git/DiscordBot/DiscordBotProj/DiscordBotProj/obj/Debug/netcoreapp2.2/DiscordBotProj.csproj.CoreCompileInputs.cache
+/Users/nikitazaytsev/git/DiscordBot/DiscordBotProj/DiscordBotProj/obj/Debug/netcoreapp2.2/DiscordBotProj.AssemblyInfoInputs.cache
+/Users/nikitazaytsev/git/DiscordBot/DiscordBotProj/DiscordBotProj/obj/Debug/netcoreapp2.2/DiscordBotProj.AssemblyInfo.cs
+/Users/nikitazaytsev/git/DiscordBot/DiscordBotProj/DiscordBotProj/bin/Debug/netcoreapp2.2/DiscordBotProj.deps.json
+/Users/nikitazaytsev/git/DiscordBot/DiscordBotProj/DiscordBotProj/bin/Debug/netcoreapp2.2/DiscordBotProj.runtimeconfig.json
+/Users/nikitazaytsev/git/DiscordBot/DiscordBotProj/DiscordBotProj/bin/Debug/netcoreapp2.2/DiscordBotProj.runtimeconfig.dev.json
+/Users/nikitazaytsev/git/DiscordBot/DiscordBotProj/DiscordBotProj/bin/Debug/netcoreapp2.2/DiscordBotProj.dll
+/Users/nikitazaytsev/git/DiscordBot/DiscordBotProj/DiscordBotProj/bin/Debug/netcoreapp2.2/DiscordBotProj.pdb
+/Users/nikitazaytsev/git/DiscordBot/DiscordBotProj/DiscordBotProj/obj/Debug/netcoreapp2.2/DiscordBotProj.dll
+/Users/nikitazaytsev/git/DiscordBot/DiscordBotProj/DiscordBotProj/obj/Debug/netcoreapp2.2/DiscordBotProj.pdb
