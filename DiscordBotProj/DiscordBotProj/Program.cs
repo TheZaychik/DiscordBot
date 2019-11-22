@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Discord;
+using Discord.Commands;
 using Discord.WebSocket;
 
 namespace DiscordBotProj
@@ -8,6 +9,8 @@ namespace DiscordBotProj
     public class Program
     {
         private DiscordSocketClient _client;
+        private CommandHandler _cmdHandler;
+        
 
         public static void Main(string[] args)
             => new Program().MainAsync().GetAwaiter().GetResult();
@@ -21,8 +24,10 @@ namespace DiscordBotProj
         public async Task MainAsync()
         {
             _client = new DiscordSocketClient();
+            _cmdHandler = new CommandHandler(_client, new CommandService());
+            await _cmdHandler.InstallCommandsAsync();
             _client.Log += Log;
-            await _client.LoginAsync(TokenType.Bot, "NjE5NTA4ODIxNzA2MTQ1ODAz.XcLeaQ.V7lSnMyey8T8j0-bm8lUOJI9lN4");
+            await _client.LoginAsync(TokenType.Bot, "NjE5NTA4ODIxNzA2MTQ1ODAz.XcVYzg.tF_3qvZPZew9XRrS131jNA6vZOY");
             await _client.StartAsync();
             await Task.Delay(-1);
         }
