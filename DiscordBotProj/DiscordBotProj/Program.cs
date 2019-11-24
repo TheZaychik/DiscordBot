@@ -27,7 +27,7 @@ namespace DiscordBotProj
             _cmdHandler = new CommandHandler(_client, new CommandService());
             await _cmdHandler.InstallCommandsAsync();
             _client.Log += Log;
-            await _client.LoginAsync(TokenType.Bot, "NjE5NTA4ODIxNzA2MTQ1ODAz.XcVYzg.tF_3qvZPZew9XRrS131jNA6vZOY");
+            await _client.LoginAsync(TokenType.Bot, "NjE5NTA4ODIxNzA2MTQ1ODAz.Xdc2ag.vFWD6Bwt6zSt9Omf7NitQT-v5DA");
             await _client.StartAsync();
             await Task.Delay(-1);
         }
