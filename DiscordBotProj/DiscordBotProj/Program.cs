@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Timers;
 using System.Threading.Tasks;
 using Discord;
 using Discord.Commands;
@@ -8,28 +9,25 @@ namespace DiscordBotProj
 {
     public class Program
     {
-        private DiscordSocketClient _client;
-        private CommandHandler _cmdHandler;
-        
-
+        // Create a mutex for a single instance.
+        private static System.Threading.Mutex INSTANCE_MUTEX = new System.Threading.Mutex(true, "WhalesFargo_DiscordBot");
+        private static DiscordBot BOT = new DiscordBot();
+//        public static UI.Window UI = new UI.Window(BOT);
+        private static string m_Token = "NjE5NTA4ODIxNzA2MTQ1ODAz.XfK1Fw.NXRc4GyqQapIrZPo89dqthuZwmk";
         public static void Main(string[] args)
             => new Program().MainAsync().GetAwaiter().GetResult();
-
-        private Task Log(LogMessage msg)
-        {
-            Console.WriteLine(msg.ToString());
-            return Task.CompletedTask;
-        }
-
         public async Task MainAsync()
         {
-            _client = new DiscordSocketClient();
-            _cmdHandler = new CommandHandler(_client, new CommandService());
-            await _cmdHandler.InstallCommandsAsync();
-            _client.Log += Log;
-            await _client.LoginAsync(TokenType.Bot, "NjE5NTA4ODIxNzA2MTQ1ODAz.Xdc2ag.vFWD6Bwt6zSt9Omf7NitQT-v5DA");
-            await _client.StartAsync();
+            Console.WriteLine("Вставьте токен вашего бота:");
+            m_Token = Console.ReadLine();
+            BOT.SetBotToken(m_Token);
+            await BOT.RunAsync();
             await Task.Delay(-1);
+
         }
+        // Connect to the bot, or cancel before the connection happens.
+        public static void Run() => System.Threading.Tasks.Task.Run(() => BOT.RunAsync());
+        public static void Cancel() => System.Threading.Tasks.Task.Run(() => BOT.CancelAsync());
+        public static void Stop() => System.Threading.Tasks.Task.Run(() => BOT.StopAsync());
     }
 }

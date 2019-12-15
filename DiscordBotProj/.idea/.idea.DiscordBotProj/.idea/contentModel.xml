@@ -5,10 +5,30 @@
       <e p="DiscordBotProj" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="CommandHandler.cs" t="Include" />
+        <e p="DiscordBot.cs" t="Include" />
         <e p="DiscordBotProj.csproj" t="IncludeRecursive" />
+        <e p="Externals" t="Include">
+          <e p="Discord.ico" t="Include" />
+          <e p="ffmpeg.exe" t="Include" />
+          <e p="ffplay.exe" t="Include" />
+          <e p="ffprobe.exe" t="Include" />
+          <e p="libopus.dll" t="Include" />
+          <e p="libsodium.dll" t="Include" />
+          <e p="opus.dll" t="Include" />
+          <e p="youtube-dl.exe" t="Include" />
+        </e>
+        <e p="Helpers" t="Include">
+          <e p="AudioDownloader.cs" t="Include" />
+          <e p="AudioFile.cs" t="Include" />
+          <e p="AudioPlayer.cs" t="Include" />
+          <e p="Tools.cs" t="Include" />
+        </e>
         <e p="Modules" t="Include">
+          <e p="AdminModule.cs" t="Include" />
           <e p="AudioModule.cs" t="Include" />
           <e p="ChatModule.cs" t="Include" />
+          <e p="CustomModule.cs" t="Include" />
+          <e p="HelpModule.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -18,12 +38,18 @@
           </e>
         </e>
         <e p="Program.cs" t="Include" />
+        <e p="Services" t="Include">
+          <e p="AdminService.cs" t="Include" />
+          <e p="AudioService.cs" t="Include" />
+          <e p="ChatService.cs" t="Include" />
+          <e p="CustomService.cs" t="Include" />
+        </e>
       </e>
       <e p="DiscordBotProj.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />
     </e>
-    <e p="$USER_HOME$/Library/Caches/Rider2019.2/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/Library/Caches/Rider2019.2/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_DiscordBotProj.807035541.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.3/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.3/resharper-host/local/Transient/ReSharperHost/v193/SolutionCaches/_DiscordBotProj.807035541.00" t="ExcludeRecursive" />
     <e p="$APPLICATION_CONFIG_DIR$/consoles/db" t="IncludeRecursive" />
     <e p="$APPLICATION_CONFIG_DIR$/extensions" t="IncludeRecursive" />
   </component>
