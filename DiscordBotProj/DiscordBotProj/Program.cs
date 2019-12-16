@@ -13,7 +13,7 @@ namespace DiscordBotProj
         private static System.Threading.Mutex INSTANCE_MUTEX = new System.Threading.Mutex(true, "WhalesFargo_DiscordBot");
         private static DiscordBot BOT = new DiscordBot();
 //        public static UI.Window UI = new UI.Window(BOT);
-        private static string m_Token = "NjE5NTA4ODIxNzA2MTQ1ODAz.XfK1Fw.NXRc4GyqQapIrZPo89dqthuZwmk";
+        private static string m_Token = "";
         public static void Main(string[] args)
             => new Program().MainAsync().GetAwaiter().GetResult();
         public async Task MainAsync()
